@@ -1,10 +1,11 @@
 ﻿namespace MyFirstCRUD
 {
-    internal class Console
+    public class Console
     {
         public static void ShowMenu()
         {
             System.Console.WriteLine("Escolha uma opção:");
+            System.Console.WriteLine();
             System.Console.WriteLine("1 - Listar todos os clientes");
             System.Console.WriteLine("2 - Cadastrar um cliente");
             System.Console.WriteLine("3 - Atualizar o cadastro de um cliente");
@@ -36,7 +37,8 @@
         public static string ReadName()
         {
             System.Console.Write("Nome: ");
-            return System.Console.ReadLine();
+            string n = System.Console.ReadLine()!;
+            return n;
         }
 
         // Método para ler e-mail do usuário
