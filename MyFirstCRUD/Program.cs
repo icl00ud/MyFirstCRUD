@@ -8,35 +8,15 @@ using Console = MyFirstCRUD.Console;
 // 3. Criar um método para listar todas as pessoas cadastradas (check)
 // 4. Criar um método para atualizar um cadastro (check)
 // 5. Criar um método para deletar um cadastro (check)
+// 6. Criar um método para ler a opção do menu (check)
+// 7. Criar um método para ler o nome do usuário (check)
+// 8. Criar um método para ler o e-mail do usuário (check)
+// 9. Criar um método para ler a idade do usuário (check)
 
-Console.ShowMenu();
-Pessoa pessoas = new Pessoa();
+// TO DO
+
+ControllerPessoa pessoas = new ControllerPessoa();
+
 pessoas.AddRandomPeople(); // Adiciona uma pessoa só para o banco de dados não ser null
 
-
-while (true)
-{
-    if (Console.ReadOption() == 1)
-    {
-        pessoas.Read();
-        break;
-    }
-    if (Console.ReadOption() == 2)
-    {
-        pessoas.Create();
-        break;
-    }
-    if (Console.ReadOption() == 3)
-    {
-        pessoas.Update();
-        break;
-    }
-    if (Console.ReadOption() == 4)
-    {
-        pessoas.Delete();
-        break;
-    }
-}
-
-
-System.Console.ReadLine();
+pessoas.CRUD();
