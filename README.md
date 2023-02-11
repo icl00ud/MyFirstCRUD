@@ -18,7 +18,9 @@ Este projeto foi criado como um exemplo para aprendizado e implementação de um
 
 1. Clone este repositório para sua máquina local
 
+```
 git clone https://github.com/icl00ud/MyFirstCRUD
+```
 
 2. Abra o projeto no Visual Studio
 3. Execute o projeto na opção "Run" do Visual Studio
